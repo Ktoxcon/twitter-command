@@ -1,2 +1,4 @@
 # twitter-command
-This project consists of a small lib for validation and some functionalities related to the Twitter API simulator managed by postman
+Librería para validar y verificar los comandos que se utilizaron en el proyecto [Twitter Clone](https://github.com/Ktoxcon/twitter-clone)
+# npm
+[Twitter-Command](https://www.npmjs.com/package/twitter-command)
