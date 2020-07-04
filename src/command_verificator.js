@@ -9,25 +9,29 @@ const commandFormater = (req) => {
   let command = null;
   let args = null;
 
-  if (req.body.command.includes("[")) {
-    const longArgument = parseLongArguments(req.body.command).join("");
-    const replacement = new RegExp(longArgument);
-    const rawReq = req.body.command.replace(replacement, "");
-    toParse = rawReq
-      .trim()
-      .split(" ")
-      .filter((arg) => arg.trim());
-    command = toParse.shift();
-    args = [longArgument, ...toParse.filter((i) => i !== "[]")];
-  } else {
-    toParse = req.body.command
-      .trim()
-      .split(" ")
-      .filter((arg) => arg.trim());
-    command = toParse.shift();
-    args = toParse;
+  if(req.body.command !== undefined){
+    if (req.body.command.includes("[")) {
+      const longArgument = parseLongArguments(req.body.command).join("");
+      const replacement = new RegExp(longArgument);
+      const rawReq = req.body.command.replace(replacement, "");
+      toParse = rawReq
+        .trim()
+        .split(" ")
+        .filter((arg) => arg.trim());
+      command = toParse.shift();
+      args = [longArgument, ...toParse.filter((i) => i !== "[]")];
+    } else {
+      toParse = req.body.command
+        .trim()
+        .split(" ")
+        .filter((arg) => arg.trim());
+      command = toParse.shift();
+      args = toParse;
+    }
+    return { command, args };
+  }else{
+    return { command:undefined, args:undefined};
   }
-  return { command, args };
 };
 
 const commandMatcher = ({ command }) => {

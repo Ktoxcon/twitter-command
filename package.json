@@ -1,0 +1,25 @@
+{
+  "name": "twitter-command",
+  "version": "1.0.5",
+  "description": "Twitter managed by commands",
+  "main": "command_verificator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ktoxcon/twitter-clone.git"
+  },
+  "keywords": [
+    "node.js"
+  ],
+  "author": "Ktoxcon",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/Ktoxcon/twitter-command/issues"
+  },
+  "homepage": "https://github.com/Ktoxcon/twitter-command#readme",
+  "dependencies": {
+    "unbracket": "^1.0.4"
+  }
+}
