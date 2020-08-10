@@ -9,7 +9,7 @@ const commandFormater = (req) => {
   let command = null;
   let args = null;
 
-  if(req.body.command !== undefined){
+  if (req.body.command !== undefined) {
     if (req.body.command.includes("[")) {
       const longArgument = parseLongArguments(req.body.command).join("");
       const replacement = new RegExp(longArgument);
@@ -29,8 +29,8 @@ const commandFormater = (req) => {
       args = toParse;
     }
     return { command, args };
-  }else{
-    return { command:undefined, args:undefined};
+  } else {
+    return { command: undefined, args: undefined };
   }
 };
 
@@ -45,6 +45,10 @@ const commandMatcher = ({ command }) => {
     "PROFILE",
     "LOGIN",
     "REGISTER",
+    "LIKE_TWEET",
+    "DISLIKE_TWEET",
+    "REPLY_TWEET",
+    "RETWEET",
   ];
 
   const commandMatched = COMMANDS.filter(
@@ -77,6 +81,10 @@ const argumentValidator = ({ command, args }) => {
     PROFILE: 1,
     LOGIN: 2,
     REGISTER: 4,
+    LIKE_TWEET: 1,
+    DISLIKE_TWEET: 1,
+    REPLY_TWEET: 2,
+    RETWEET: 2,
   };
 
   let validArgs = false;
