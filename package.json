@@ -2,7 +2,7 @@
   "name": "twitter-command",
   "version": "1.0.6",
   "description": "Twitter managed by commands",
-  "main": "command_verificator.js",
+  "main": "src/command_verificator.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
