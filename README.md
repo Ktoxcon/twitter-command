@@ -10,6 +10,7 @@ Librería de código abierto para validar y ofrecer algunas funcionalidades rela
    yarn add twitter-command@latest 
    ```  
 ## Funcionalidades
-La librería cuenta con diferentes métodos para realizar la validación y transformación de las peticiones HTTP a un formato más fácil de manejar.  
+La librería cuenta con diferentes métodos para realizar la validación y transformación de las peticiones HTTP a un  
+formato más fácil de manejar.  
 
   
