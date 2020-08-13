@@ -1,6 +1,6 @@
 {
   "name": "twitter-command",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Twitter managed by commands",
   "main": "src/command_verificator.js",
   "scripts": {
