@@ -3,11 +3,11 @@ Librería de código abierto para validar y ofrecer algunas funcionalidades rela
 ## Instalación  
  - ### NPM  
    ```
-   npm install twitter-command@latest --save
+   npm install twitter-command --save
    ```  
  - ### YARN
    ```
-   yarn add twitter-command@latest 
+   yarn add twitter-command
    ```  
 ## Funcionalidades
 La librería cuenta con diferentes métodos para realizar la validación y transformación de las peticiones HTTP a un  
