@@ -13,4 +13,7 @@ Librería de código abierto para validar y ofrecer algunas funcionalidades rela
 La librería cuenta con diferentes métodos para realizar la validación y transformación de las peticiones HTTP a un  
 formato más fácil de manejar.  
 
-  
+ 
+<hr>
+
+<p align="center">Hecho con  <b><del>el ❤️</del></b> con una 💻 por Ktoxcon</p> 
