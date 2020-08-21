@@ -1,5 +1,5 @@
 # Twitter-Command
-Librería de código abierto para validar y ofrecer algunas funcionalidades relacionadas al proyecto [Twitter Clone](https://github.com/Ktoxcon/twitter-clone).
+Librería de código abierto para validar comandos, argumentos y ofrecer algunas funcionalidades relacionadas al proyecto [Twitter Clone](https://github.com/Ktoxcon/twitter-clone).
 ## Instalación  
  - ### NPM  
    ```
